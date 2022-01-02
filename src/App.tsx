@@ -1,9 +1,12 @@
+import React from 'react';
+import Router from './components/Router';
+
 function App() {
-  return (
-    <div className="App">
-      <h1 className="text-3xl">Hello World</h1>
-    </div>
-  );
+    return (
+        <div className="flex flex-col justify-center max-w-2xl px-8 mx-auto">
+            <Router />
+        </div>
+    );
 }
 
 export default App;
