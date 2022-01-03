@@ -25,13 +25,13 @@ const Navbar: FC = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/blog" className={thePath('blog')}>
-                        Blog
+                    <Link to="/portfolio" className={thePath('portfolio')}>
+                        Portfolio
                     </Link>
                 </li>
                 <li>
-                    <Link to="/portfolio" className={thePath('portfolio')}>
-                        Portfolio
+                    <Link to="/blog" className={thePath('blog')}>
+                        Blog
                     </Link>
                 </li>
                 <li>
