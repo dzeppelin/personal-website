@@ -6,7 +6,7 @@ const Navbar: FC = () => {
     return (
         <nav className="flex flex-row justify-between">
             <span className="logo">talapov</span>
-            <ul className="flex flex-row">
+            <ul className="flex flex-row px-10 last:pl-10 first:pr-10">
                 <li>
                     <Link to="/">Home</Link>
                 </li>
