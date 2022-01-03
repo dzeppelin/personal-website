@@ -1,0 +1,19 @@
+/* Logo Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+span.logo {
+    font-family: 'Yellowtail', cursive;
+}
+
+ul > li {
+    /* padding */
+    @apply px-3 py-1;
+
+    /* box on the hover */
+    @apply hover:bg-gray-200 rounded-md transition-all active:text-black;
+}
+
+nav {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
