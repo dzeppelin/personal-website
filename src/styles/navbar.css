@@ -1,10 +1,16 @@
-/* Logo Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
+/* Desktop and Mobile  */
 span.logo {
     font-family: 'Yellowtail', cursive;
 }
 
+nav {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+/* Desktop */
 ul > li {
     /* padding */
     @apply px-3 py-1;
@@ -13,7 +19,7 @@ ul > li {
     @apply hover:bg-gray-200 rounded-md transition-all active:text-black;
 }
 
-nav {
-    margin-top: 32px;
-    margin-bottom: 64px;
+/* Mobile */
+.hamburger > span {
+    height: 1px;
 }
