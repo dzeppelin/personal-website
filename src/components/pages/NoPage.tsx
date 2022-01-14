@@ -1,8 +1,8 @@
-import React from 'react';
-import { FC } from 'react';
+import React from 'react'
+import { FC } from 'react'
 
 const NoPage: FC = () => {
-    return <h1>Error 404</h1>;
-};
+	return <h1>Error 404</h1>
+}
 
-export default NoPage;
+export default NoPage

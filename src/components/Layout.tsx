@@ -1,16 +1,17 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import React, { FC } from 'react'
+import { Outlet } from 'react-router-dom'
+import Navbar from './Navbar'
+import Footer from './Footer'
+import withNavigation from './withNavigation'
 
-function Layout() {
-    return (
-        <>
-            <Navbar />
-            <Outlet />
-            <Footer />
-        </>
-    );
+const Layout: FC = () => {
+	return (
+		<>
+			{withNavigation(Navbar)}
+			<Outlet />
+			{withNavigation(Footer)}
+		</>
+	)
 }
 
-export default Layout;
+export default Layout
