@@ -1,16 +1,16 @@
-import React, { FC } from 'react'
-import { useLocation } from 'react-router-dom'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-const withNavigation: FC = ({ Component }) => {
+const withNavigation = (Component: any) => (props: any) => {
 	type Navigation = {
-		id: number
-		name: string
-		href: string
-		activeTextBlack: string
-	}
+		id: number;
+		name: string;
+		href: string;
+		activeTextBlack: string;
+	};
 
-	const { pathname } = useLocation()
-	const currentPage = pathname.split('/')[1]
+	const { pathname } = useLocation();
+	const currentPage = pathname.split('/')[1];
 
 	const navigation: Navigation[] = [
 		{
@@ -37,8 +37,9 @@ const withNavigation: FC = ({ Component }) => {
 			href: 'contacts',
 			activeTextBlack: currentPage === 'contacts' ? 'text-black' : '',
 		},
-	]
-	return <Component {...props} navigation={navigation} />
-}
+	];
 
-export default withNavigation
+	return <Component {...props} navigation={navigation} />;
+};
+
+export default withNavigation;

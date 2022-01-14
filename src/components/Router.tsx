@@ -1,13 +1,13 @@
-import React, { FC } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from './Layout'
+import React, { FC } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from 'components/Layout';
 
 /* Website pages */
-import Home from './pages/Home'
-import Blog from './pages/Blog'
-import Portfolio from './pages/Portfolio'
-import Contacts from './pages/Contacts'
-import NoPage from './pages/NoPage'
+import Home from 'components/pages/Home';
+import Blog from 'components/pages/Blog';
+import Portfolio from 'components/pages/Portfolio';
+import Contacts from 'components/pages/Contacts';
+import NoPage from 'components/pages/NoPage';
 
 const Router: FC = () => {
 	return (
@@ -22,7 +22,7 @@ const Router: FC = () => {
 				</Route>
 			</Routes>
 		</BrowserRouter>
-	)
-}
+	);
+};
 
-export default Router
+export default Router;

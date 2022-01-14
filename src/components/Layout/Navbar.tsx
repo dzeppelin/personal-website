@@ -1,38 +1,39 @@
-import React, { FC, Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/solid'
-import { Link } from 'react-router-dom'
-import './styles/navbar.css'
+import React, { FC, Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/solid';
+import { Link } from 'react-router-dom';
+import withNavigation from 'components/withNavigation';
+import 'components/styles/navbar.css';
 
 type Navigation = {
-	id: number
-	name: string
-	href: string
-	activeTextBlack: string
-}
+	id: number;
+	name: string;
+	href: string;
+	activeTextBlack: string;
+};
 
 type Props = {
-	navigation: Navigation[]
-}
+	navigation: Navigation[];
+};
 
 type Open = {
-	open: boolean
-}
+	open: boolean;
+};
 
 const Navbar: FC<Props> = ({ navigation }) => {
-	const mapNavigation = navigation.map(item => {
+	const mapNav = navigation.map(item => {
 		return (
 			<li key={item.id} className='first:mt-0 mt-2 sm:mt-0'>
 				<Link to={item.href} className={item.activeTextBlack}>
 					{item.name}
 				</Link>
 			</li>
-		)
-	})
+		);
+	});
 
 	const buttonHandler = ({ open }: Open) => (
 		<>{open ? <XIcon className='w-6 h-6' /> : <MenuIcon className='w-6 h-6' />}</>
-	)
+	);
 
 	return (
 		<header>
@@ -43,9 +44,7 @@ const Navbar: FC<Props> = ({ navigation }) => {
 				</span>
 				{/* Desktop navbar menu */}
 				<div className='hidden sm:block'>
-					<ul className='flex flex-row items-center text-gray-500'>
-						{mapNavigation}
-					</ul>
+					<ul className='flex flex-row items-center text-gray-500'>{mapNav}</ul>
 				</div>
 				{/* Mobile navbar menu */}
 				<div className='hamburger sm:hidden w-7 h-7 flex flex-col justify-center items-center cursor-pointer'>
@@ -75,7 +74,7 @@ const Navbar: FC<Props> = ({ navigation }) => {
 							<Popover.Panel className='absolute left-1/2 -translate-x-1/2 z-10 w-11/12 mt-3 ring-1 ring-black ring-opacity-5 rounded-lg'>
 								<div className='rounded-lg shadow-md bg-white'>
 									<div>
-										<ul className='px-4 pt-4 pb-5 text-gray-500'>{mapNavigation}</ul>
+										<ul className='px-4 pt-4 pb-5 text-gray-500'>{mapNav}</ul>
 									</div>
 								</div>
 							</Popover.Panel>
@@ -84,7 +83,7 @@ const Navbar: FC<Props> = ({ navigation }) => {
 				</div>
 			</nav>
 		</header>
-	)
-}
+	);
+};
 
-export default Navbar
+export default withNavigation(Navbar);
