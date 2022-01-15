@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FC } from 'react';
 import withNavigation from 'components/withNavigation';
+import 'components/styles/footer.css';
 
 type Navigation = {
 	id: number;
@@ -18,7 +19,7 @@ const Footer: FC<Props> = ({ navigation }) => {
 	const mapNav = navigation.map(item => {
 		return (
 			<li key={item.id}>
-				<Link to={item.href} className={`${item.activeTextBlack} mx-3`}>
+				<Link to={item.href} className={`${item.activeTextBlack} mx-1`}>
 					{item.name}
 				</Link>
 			</li>
@@ -27,7 +28,7 @@ const Footer: FC<Props> = ({ navigation }) => {
 
 	return (
 		<footer>
-			<ul className='flex flex-row flex-wrap items-center justify-center mt-2 text-gray-500'>
+			<ul className='flex flex-row flex-wrap items-center justify-center text-gray-500'>
 				{mapNav}
 			</ul>
 		</footer>
