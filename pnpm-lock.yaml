@@ -6,6 +6,7 @@ specifiers:
   '@babel/plugin-transform-react-jsx': 7.14.9
   '@headlessui/react': ^1.4.2
   '@heroicons/react': ^1.0.5
+  '@tailwindcss/typography': ^0.5.0
   '@testing-library/dom': ^8.11.1
   '@testing-library/jest-dom': ^5.16.1
   '@testing-library/react': ^12.1.2
@@ -54,6 +55,7 @@ devDependencies:
   '@babel/core': 7.16.7
   '@babel/plugin-syntax-flow': 7.14.5_@babel+core@7.16.7
   '@babel/plugin-transform-react-jsx': 7.14.9_@babel+core@7.16.7
+  '@tailwindcss/typography': 0.5.0_tailwindcss@3.0.8
   '@testing-library/dom': 8.11.1
   '@typescript-eslint/eslint-plugin': 5.9.1_b7b2e42b32ee097737cd3e626b10847b
   '@typescript-eslint/parser': 5.9.1_eslint@8.6.0+typescript@4.5.4
@@ -1933,6 +1935,18 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /@tailwindcss/typography/0.5.0_tailwindcss@3.0.8:
+    resolution: {integrity: sha512-1p/3C6C+JJziS/ghtG8ACYalbA2SyLJY27Pm33cVTlAoY6VQ7zfm2H64cPxUMBkVIlWXTtWHhZcZJPobMRmQAA==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || insiders'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      lodash.uniq: 4.5.0
+      tailwindcss: 3.0.8_cefe482e8d38053bbf3d5815e0c551b3
+    dev: true
 
   /@testing-library/dom/8.11.1:
     resolution: {integrity: sha512-3KQDyx9r0RKYailW2MiYrSSKEfH0GTkI51UGEvJenvcoDoeRYs0PZpi2SXqtnMClQvCqdtTTpOfFETDTVADpAg==}
@@ -6087,9 +6101,17 @@ packages:
       p-locate: 5.0.0
     dev: false
 
+  /lodash.castarray/4.4.0:
+    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=}
+    dev: true
+
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=}
     dev: false
+
+  /lodash.isplainobject/4.0.6:
+    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=}
+    dev: true
 
   /lodash.memoize/4.1.2:
     resolution: {integrity: sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=}
@@ -6104,7 +6126,6 @@ packages:
 
   /lodash.uniq/4.5.0:
     resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=}
-    dev: false
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
