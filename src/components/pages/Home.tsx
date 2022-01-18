@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import 'components/styles/pages/home.css';
 
 const Home = () => {
 	return (
@@ -61,51 +62,62 @@ const Home = () => {
 					</Link>
 				</div>
 			</div>
-			{/* Skills */}
-			<h1 className='text-2xl font-bold tracking-tight mt-10 mb-4'>Skills</h1>
-			<div className='grid grid-cols-3 gap-3 items-center justify-center'>
-				<div className='w-48 flex flex-col items-center justify-center p-4 ring-1 ring-black shadow-md rounded-lg'>
-					<img src='nodejs.png' alt='logo of node.js' className='h-20' />
-					<h2 className='text-lg font-medium mt-3 mb-1'>Express.js</h2>
-					<p className='text-center'>
-						I use it to setup apis and for the backend, including deployment.
-					</p>
-				</div>
-				<div className='w-48 flex flex-col items-center justify-center p-4 ring-1 ring-black shadow-md rounded-lg'>
-					<img src='logo192.png' alt='logo of react.js' className='h-20' />
-					<h2 className='text-lg font-medium mt-3 mb-1'>React.js</h2>
-					<p className='text-center'>
-						I use it on a regular basis, and it&apos;s primary frontend library.
-					</p>
-				</div>
-				<div className='w-48 flex flex-col items-center justify-center p-4 ring-1 ring-black shadow-md rounded-lg'>
-					<img src='nextjs.png' alt='logo of next.js' className='h-20' />
-					<h2 className='text-lg font-medium mt-3 mb-1'>Next.js</h2>
-					<p className='text-center'>
-						I use it as frontend framework but only when SSR or SSG is required.
-					</p>
-				</div>
-				<div className='w-48 flex flex-col items-center justify-center p-4 ring-1 ring-black shadow-md rounded-lg'>
-					<img src='psql.svg' alt='logo of postgresql' className='h-20' />
-					<h2 className='text-lg font-medium mt-3 mb-1'>PostgreSQL</h2>
-					<p className='text-center'>
-						It&apos;s a powerful relational database. I use it because it scales well.
-					</p>
-				</div>
-				<div className='w-48 flex flex-col items-center justify-center p-4 ring-1 ring-black shadow-md rounded-lg'>
-					<img src='tailwind.png' alt='logo of tailwindcss' className='h-20' />
-					<h2 className='text-lg font-medium mt-3 mb-1'>TailwindCSS</h2>
-					<p className='text-center'>
-						Utility-first css framework. I use it for easy api like styling.
-					</p>
-				</div>
-				<div className='w-48 flex flex-col items-center justify-center p-4 ring-1 ring-black shadow-md rounded-lg'>
-					<img src='nodejs.png' alt='logo of node.js' className='h-20' />
-					<h2 className='text-lg font-medium mt-3 mb-1'>Express.js</h2>
-					<p className='text-center'>
-						I use it to setup REST apis and for all of the backend, including
-						deployment.
-					</p>
+			{/* My Skills */}
+			<h1 className='text-2xl font-bold tracking-tight mt-10 mb-4'>My Skills</h1>
+			<div className='flex flex-col justify-center items-center'>
+				<div className='grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3'>
+					<div className='skill-card'>
+						<img src='nodejs.png' alt='logo of node.js' className='skill-card-img' />
+						<h2 className='skill-card-h2'>Express.js</h2>
+						<p className='text-center'>
+							I use it to setup apis and for the backend, including deployment.
+						</p>
+					</div>
+					<div className='skill-card'>
+						<img
+							src='logo192.png'
+							alt='logo of react.js'
+							className='skill-card-img'
+						/>
+						<h2 className='skill-card-h2'>React.js</h2>
+						<p className='text-center'>
+							I use it on a regular basis, and it&apos;s primary frontend library.
+						</p>
+					</div>
+					<div className='skill-card'>
+						<img src='nextjs.png' alt='logo of next.js' className='skill-card-img' />
+						<h2 className='skill-card-h2'>Next.js</h2>
+						<p className='text-center'>
+							I use it as frontend framework but only when SSR or SSG are required.
+						</p>
+					</div>
+					<div className='skill-card'>
+						<img src='psql.svg' alt='logo of postgresql' className='skill-card-img' />
+						<h2 className='skill-card-h2'>PostgreSQL</h2>
+						<p className='text-center'>
+							It&apos;s a powerful relational database. I use it because it scales
+							well.
+						</p>
+					</div>
+					<div className='skill-card'>
+						<img
+							src='tailwind.png'
+							alt='logo of tailwindcss'
+							className='skill-card-img'
+						/>
+						<h2 className='skill-card-h2'>TailwindCSS</h2>
+						<p className='text-center'>
+							Utility-first css framework. I use it for easy api like styling.
+						</p>
+					</div>
+					<div className='skill-card'>
+						<img src='docker.png' alt='logo of docker' className='skill-card-img' />
+						<h2 className='skill-card-h2'>Docker</h2>
+						<p className='text-center'>
+							I use it to deploy nginx and express.js servers. It&apos;s esier to
+							manage stuff with it.
+						</p>
+					</div>
 				</div>
 			</div>
 		</>

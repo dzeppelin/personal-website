@@ -1,0 +1,11 @@
+.skill-card {
+	@apply w-64 md:w-48 flex flex-col items-center justify-center p-4 ring-1 ring-black shadow-md rounded-lg;
+}
+
+.skill-card-img {
+	@apply h-20;
+}
+
+.skill-card-h2 {
+	@apply text-lg font-medium mt-3 mb-1;
+}
