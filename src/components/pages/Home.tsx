@@ -11,7 +11,7 @@ const Home = () => {
 					<h1 className='text-2xl font-bold tracking-tight text-black w-10'>
 						Talapov Abulkhair
 					</h1>
-					<p className='mt-3 mb-4 w-56 italic'>
+					<p className='mt-3 mb-4 sm:w-56 w-52 italic'>
 						I am fullstack web developer and student at Nazarbayev University,
 						currently studying on foundation year.
 					</p>
@@ -22,8 +22,12 @@ const Home = () => {
 					</Link>
 				</div>
 				<div className='R flex flex-col justify-center items-center'>
-					<img src='pp.jpg' alt='profile picture' className='h-32 rounded-full' />
-					<div className='mt-3 mb-1'>
+					<img
+						src='pp.jpg'
+						alt='profile picture'
+						className='hidden sm:block sm:h-44 md:h-32 rounded-full'
+					/>
+					<div className='mt-3 mb-1 hidden md:block'>
 						<p className='italic'>
 							<span className='text-black font-medium not-italic'>Address: </span>
 							Almaty, Kazakstan
@@ -124,7 +128,6 @@ const Home = () => {
 			<h2 className='text-2xl font-bold tracking-tight mt-10 mb-4'>
 				Featured Posts
 			</h2>
-			<div></div>
 		</>
 	);
 };
