@@ -1,5 +1,5 @@
 .skill-card {
-	@apply w-64 md:w-48 flex flex-col items-center justify-center p-4 ring-1 ring-black shadow-md rounded-lg;
+	@apply w-64 md:w-48 flex flex-col items-center justify-center p-4 ring-1 ring-black shadow-md rounded-lg text-gray-500 italic;
 }
 
 .skill-card-img {
@@ -7,5 +7,5 @@
 }
 
 .skill-card-h2 {
-	@apply text-lg font-medium mt-3 mb-1;
+	@apply text-lg font-medium mt-3 mb-1 text-black not-italic;
 }

@@ -41,10 +41,10 @@ const Home = () => {
 			</div>
 			{/* More About Me */}
 			<div>
-				<h1 className='text-2xl font-bold tracking-tight mt-10 mb-4'>
+				<h2 className='text-2xl font-bold tracking-tight mt-10 mb-4'>
 					More about Me
-				</h1>
-				<p className=''>
+				</h2>
+				<p className='italic text-gray-500'>
 					I am software developer based in Kazakstan and I have been building web
 					applications for at least a year, which bring any ideas to life. I help
 					convert a vision and idea into something meaningful and useful as a
@@ -63,7 +63,7 @@ const Home = () => {
 				</div>
 			</div>
 			{/* My Skills */}
-			<h1 className='text-2xl font-bold tracking-tight mt-10 mb-4'>My Skills</h1>
+			<h2 className='text-2xl font-bold tracking-tight mt-10 mb-4'>My Skills</h2>
 			<div className='flex flex-col justify-center items-center'>
 				<div className='grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3'>
 					<div className='skill-card'>
@@ -120,6 +120,11 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			{/* Featured Posts */}
+			<h2 className='text-2xl font-bold tracking-tight mt-10 mb-4'>
+				Featured Posts
+			</h2>
+			<div></div>
 		</>
 	);
 };
