@@ -27,12 +27,6 @@ const withNavigation = (Component: any) => (props: any) => {
 		},
 		{
 			id: 3,
-			name: 'Blog',
-			href: '/blog',
-			activeTextBlack: currentPage === 'blog' ? 'text-black' : '',
-		},
-		{
-			id: 4,
 			name: 'Contacts',
 			href: 'contacts',
 			activeTextBlack: currentPage === 'contacts' ? 'text-black' : '',

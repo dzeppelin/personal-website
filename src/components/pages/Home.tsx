@@ -124,10 +124,6 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			{/* Featured Posts */}
-			<h2 className='text-2xl font-bold tracking-tight mt-10 mb-4'>
-				Featured Posts
-			</h2>
 		</>
 	);
 };
