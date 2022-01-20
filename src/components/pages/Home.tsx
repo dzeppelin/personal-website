@@ -16,7 +16,7 @@ const Home = () => {
 						currently studying on foundation year.
 					</p>
 					<Link to='/contacts'>
-						<button className='p-1 px-3 rounded-full hover:shadow-lg text-black font-medium ring-2 ring-black'>
+						<button className='p-1 px-3 rounded-full hover:shadow-lg text-black ring-2 ring-black'>
 							Work with Me
 						</button>
 					</Link>
