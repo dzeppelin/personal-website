@@ -1,11 +1,7 @@
 .skill-card {
-	@apply w-64 md:w-48 flex flex-col items-center justify-center p-4 text-gray-500 italic;
-}
-
-.skill-card-img {
-	@apply h-20;
+	@apply w-64 md:w-48 flex flex-col items-center justify-center p-4 text-gray-500;
 }
 
 .skill-card-h2 {
-	@apply text-lg font-bold mt-3 mb-1 text-black not-italic;
+	@apply sm:text-lg font-medium mt-3 mb-1 text-black;
 }
