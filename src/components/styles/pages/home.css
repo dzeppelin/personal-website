@@ -1,5 +1,5 @@
 .skill-card {
-	@apply w-64 md:w-48 flex flex-col items-center justify-center p-4 text-gray-500;
+	@apply w-64 flex flex-col items-center justify-center p-4 ring-1 ring-black rounded-lg m-3 shadow-lg text-gray-500;
 }
 
 .skill-card-h2 {

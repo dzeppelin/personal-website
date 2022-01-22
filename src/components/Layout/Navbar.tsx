@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react';
+import React, { FC, Fragment, useRef } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/solid';
 import { Link } from 'react-router-dom';
@@ -21,19 +21,31 @@ type Open = {
 };
 
 const Navbar: FC<Props> = ({ navigation }) => {
-	const mapNav = navigation.map(item => {
-		return (
-			<li key={item.id} className='first:mt-0 mt-2 sm:mt-0'>
-				<Link to={item.href} className={item.activeTextBlack}>
-					{item.name}
-				</Link>
-			</li>
-		);
-	});
+	const buttonRef = useRef<any>();
 
 	const buttonHandler = ({ open }: Open) => (
 		<>{open ? <XIcon className='w-6 h-6' /> : <MenuIcon className='w-6 h-6' />}</>
 	);
+
+	const mapNav = navigation.map(item => {
+		return (
+			// Here we have separate styles of bg on hover
+			<div
+				key={item.id}
+				className='first:mt-0 mt-2 sm:mt-0 px-3 py-1 hover:bg-gray-200 rounded-md transition-all active:text-black'
+			>
+				<Link
+					to={item.href}
+					className={item.activeTextBlack}
+					onClick={() => {
+						buttonRef.current.click();
+					}}
+				>
+					<li>{item.name}</li>
+				</Link>
+			</div>
+		);
+	});
 
 	return (
 		<header>
@@ -58,7 +70,10 @@ const Navbar: FC<Props> = ({ navigation }) => {
 							leaveFrom='opacity-100 scale-100'
 							leaveTo='opacity-0 scale-95'
 						>
-							<Popover.Button className='p-1 mt-1 rounded-md bg-gray-200'>
+							<Popover.Button
+								className='p-1 mt-1 rounded-md bg-gray-200'
+								ref={buttonRef}
+							>
 								{buttonHandler}
 							</Popover.Button>
 						</Transition>

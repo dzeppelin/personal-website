@@ -50,7 +50,7 @@ const Home = () => {
 				</h2>
 				<p className='text-gray-500'>
 					I am software developer based in Kazakstan and I have been building web
-					applications for at least a year, which bring any ideas to life. I help
+					applications for at least a year, which bring any ideas to life. I help to
 					convert a vision and idea into something meaningful and useful as a
 					software product. Take a look at my portfolio and let&apos;s see if we can
 					work together.
@@ -71,23 +71,24 @@ const Home = () => {
 				My Skills
 			</h2>
 			<div className='flex flex-col justify-center items-center'>
-				<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+				<div className='grid grid-cols-1 sm:grid-cols-2'>
 					<div className='skill-card'>
 						<h2 className='skill-card-h2'>Express</h2>
 						<p className='text-center'>
-							I use it to setup apis and for the backend, including deployment.
+							I use it to setup apis and for the backend in general, including
+							deployment.
 						</p>
 					</div>
 					<div className='skill-card'>
 						<h2 className='skill-card-h2'>React</h2>
 						<p className='text-center'>
-							I use it on a regular basis, and it&apos;s primary frontend library.
+							I use it on a regular basis, and think of it as primary frontend library.
 						</p>
 					</div>
 					<div className='skill-card'>
 						<h2 className='skill-card-h2'>Next</h2>
 						<p className='text-center'>
-							I use it as frontend framework but only when SSR or SSG are required.
+							I sometimes use it but only when SSR or SSG are required.
 						</p>
 					</div>
 					<div className='skill-card'>
@@ -95,19 +96,6 @@ const Home = () => {
 						<p className='text-center'>
 							It&apos;s a powerful relational database. I use it because it scales
 							well.
-						</p>
-					</div>
-					<div className='skill-card'>
-						<h2 className='skill-card-h2'>TailwindCSS</h2>
-						<p className='text-center'>
-							Utility-first css framework. I use it for easy api like styling.
-						</p>
-					</div>
-					<div className='skill-card'>
-						<h2 className='skill-card-h2'>Docker</h2>
-						<p className='text-center'>
-							I use it to deploy nginx and express.js servers. It&apos;s esier to
-							manage stuff with it.
 						</p>
 					</div>
 				</div>
