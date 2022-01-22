@@ -3,7 +3,7 @@ import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/solid';
 import { Link } from 'react-router-dom';
 import withNavigation from 'components/withNavigation';
-import 'components/styles/navbar.css';
+import 'styles/navbar.css';
 
 type Navigation = {
 	id: number;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FC } from 'react';
 import withNavigation from 'components/withNavigation';
-import 'components/styles/footer.css';
+import 'styles/footer.css';
 
 type Navigation = {
 	id: number;
