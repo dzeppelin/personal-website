@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from 'components/layout/Layout';
 
@@ -8,7 +8,7 @@ import Portfolio from 'components/pages/Portfolio';
 import Contacts from 'components/pages/Contacts';
 import NoPage from 'components/pages/NoPage';
 
-const Router: FC = () => {
+const Router = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
