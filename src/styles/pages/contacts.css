@@ -1,0 +1,3 @@
+ul.contacts > li {
+	@apply my-1 first:mt-0 last:mb-0;
+}

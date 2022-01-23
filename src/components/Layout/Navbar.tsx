@@ -89,7 +89,7 @@ const Navbar: FC<Props> = ({ navigation }) => {
 							<Popover.Panel className='absolute left-1/2 -translate-x-1/2 z-10 w-11/12 mt-3 ring-1 ring-black ring-opacity-5 rounded-lg'>
 								<div className='rounded-lg shadow-md bg-white'>
 									<div>
-										<ul className='px-4 pt-4 pb-5 text-gray-500'>{mapNav}</ul>
+										<ul className='px-4 pt-4 pb-5 text-gray-500 navbar'>{mapNav}</ul>
 									</div>
 								</div>
 							</Popover.Panel>
