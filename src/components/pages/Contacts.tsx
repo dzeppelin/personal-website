@@ -21,7 +21,7 @@ const Contacts = () => {
 							type='text'
 							name=''
 							id=''
-							className='ring-1 rounded-lg ring-gray-500 p-1 px-2 h-20'
+							className='ring-1 rounded-lg ring-gray-500 p-1 px-2 pb-10'
 						/>
 						<div className='flex flex-row justify-items-start'>
 							<button>Send</button>
