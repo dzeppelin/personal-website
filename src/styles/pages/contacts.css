@@ -1,3 +1,7 @@
 ul.contacts > li {
 	@apply my-1 last:mb-0 first:mt-0 text-gray-500;
 }
+
+ul.contact-links > li {
+	@apply m-3 last:mb-0 first:mt-0 cursor-pointer;
+}
