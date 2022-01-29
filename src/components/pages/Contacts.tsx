@@ -11,7 +11,7 @@ const Contacts = () => {
 				</h2>
 
 				<div className='flex flex-row w-full ring-1 ring-black rounded-lg p-16'>
-					<div className='form flex flex-col w-1/2'>
+					<div className='form flex flex-col w-3/4'>
 						<p className='mb-2 font-medium'>Header</p>
 						<input
 							type='text'
@@ -32,10 +32,10 @@ const Contacts = () => {
 							</button>
 						</div>
 					</div>
-					<div className='contacts w-1/2 flex flex-col mt-2'>
+					<div className='contacts w-1/4 flex flex-col mt-2'>
 						<ul className='flex flex-col contacts items-center contact-links ml-10'>
 							<li>
-								<a href=''>My Blog</a>
+								<a href=''>Blog</a>
 								<img src='hashnode.png' alt='hashnode logo' />
 							</li>
 							<li>
