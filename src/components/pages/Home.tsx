@@ -46,7 +46,7 @@ const Home = () => {
 										rel='noreferrer'
 										className='text-gray-500 hover:text-black'
 									>
-										Blog
+										Blog,
 									</a>
 								</li>
 								<li className='github'>
