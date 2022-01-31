@@ -25,12 +25,6 @@ const withNavigation = (Component: any) => (props: any) => {
 			href: '/portfolio',
 			activeTextBlack: currentPage === 'portfolio' ? 'text-black' : '',
 		},
-		{
-			id: 3,
-			name: 'Contacts',
-			href: 'contacts',
-			activeTextBlack: currentPage === 'contacts' ? 'text-black' : '',
-		},
 	];
 
 	return <Component {...props} navigation={navigation} />;

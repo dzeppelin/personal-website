@@ -1,7 +1,0 @@
-ul.contacts > li {
-	@apply mt-1 first:ml-0 last:mr-0 mx-2 cursor-pointer flex flex-row ring-2 rounded-full ring-black px-6 py-1 w-36 text-black hover:shadow-lg;
-}
-
-ul.contacts > li > img {
-	@apply h-6 ml-2 mr-4;
-}

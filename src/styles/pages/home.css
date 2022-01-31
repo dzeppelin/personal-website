@@ -5,3 +5,19 @@
 .skill-card-h2 {
 	@apply sm:text-lg font-medium mt-3 mb-1 text-black;
 }
+
+ul.contacts > li {
+	@apply mr-3 cursor-pointer flex flex-row text-black;
+}
+
+ul.contacts > li > img {
+	@apply ml-1;
+}
+
+li.blog > img {
+	@apply h-6 pb-0.5;
+}
+
+li.github > img {
+	@apply h-6;
+}
