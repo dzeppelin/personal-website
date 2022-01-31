@@ -16,7 +16,7 @@ const Home = () => {
 							I am fullstack web developer and student at Nazarbayev University,
 							currently studying on foundation year.
 						</p>
-						<a href='mailto:abzh423@protonmail.com'>
+						<a href='mailto:abzh423@protonmail.com' target='_blank' rel='noreferrer'>
 							<button className='p-1 px-3 rounded-full hover:shadow-lg text-black ring-2 ring-black'>
 								Work with Me
 							</button>
