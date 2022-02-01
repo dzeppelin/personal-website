@@ -27,7 +27,7 @@ const Footer: FC<Props> = ({ navigation }) => {
 	});
 
 	return (
-		<footer className='mb-5'>
+		<footer className='mb-5 bottom-0'>
 			<ul className='flex flex-row flex-wrap items-center justify-center text-gray-500 footer'>
 				{mapNav}
 			</ul>

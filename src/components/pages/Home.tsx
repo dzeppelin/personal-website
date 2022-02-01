@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import 'styles/pages/home.css';
 
 const Home = () => {
@@ -46,7 +45,7 @@ const Home = () => {
 										rel='noreferrer'
 										className='text-gray-500 hover:text-black'
 									>
-										Blog,
+										blog,
 									</a>
 								</li>
 								<li className='github'>
@@ -56,30 +55,17 @@ const Home = () => {
 										rel='noreferrer'
 										className='text-gray-500 hover:text-black'
 									>
-										Github
+										github
 									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				{/* <div className='flex flex-row mt-6 items-center w-full rounded-lg py-1'>
-					<ul className='flex flex-row contacts contacts'>
-						<li className='text-black font-medium'>Links:</li>
-						<li className='hover:underline blog'>
-							<a href=''>Blog</a>
-							<img src='hashnode.png' alt='hashnode logo' />
-						</li>
-						<li className='hover:underline github'>
-							<a href=''>Github</a>
-							<img src='github.png' alt='github logo' className='pb-0.5' />
-						</li>
-					</ul>
-				</div> */}
 			</div>
 			{/* More About Me */}
 			<div>
-				<h2 className='text-xl sm:text-2xl font-bold tracking-tight mt-10 mb-4'>
+				<h2 className='text-xl sm:text-2xl font-bold tracking-tight mt-8 mb-4'>
 					More about Me
 				</h2>
 				<p className='text-gray-500'>
@@ -89,19 +75,9 @@ const Home = () => {
 					software product. Take a look at my portfolio and let&apos;s see if we can
 					work together.
 				</p>
-				<div className='flex flex-row mt-5'>
-					<button className='p-1 px-3 mr-3 ring-2 ring-black hover:shadow-lg rounded-full'>
-						Download resume
-					</button>
-					<Link to='/portfolio'>
-						<button className='p-1 px-3 ring-2 ring-black hover:shadow-lg rounded-full'>
-							Portfolio
-						</button>
-					</Link>
-				</div>
 			</div>
 			{/* My Skills */}
-			<h2 className='text-xl sm:text-2xl font-bold tracking-tight mt-10 mb-4'>
+			<h2 className='text-xl sm:text-2xl font-bold tracking-tight mt-8 mb-4'>
 				My Skills
 			</h2>
 			<div className='flex flex-col justify-center items-center'>
