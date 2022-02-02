@@ -22,7 +22,7 @@ const withNavigation = (Component: any) => (props: any) => {
 		{
 			id: 2,
 			name: 'Portfolio',
-			href: '/portfolio',
+			href: '',
 			activeTextBlack: currentPage === 'portfolio' ? 'text-black' : '',
 		},
 	];

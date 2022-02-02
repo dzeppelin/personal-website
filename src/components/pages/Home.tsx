@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'styles/pages/home.css';
 
 const Home = () => {
+	useEffect(() => {
+		document.title = 'Home';
+	}, []);
+
 	return (
 		<>
 			{/* Main Card */}
@@ -15,6 +19,40 @@ const Home = () => {
 							I am fullstack web developer and student at Nazarbayev University,
 							currently studying on foundation year.
 						</p>
+						{/* displayed only on mobile */}
+						<div className='mb-5 md:hidden'>
+							<p>
+								<span className='text-black font-medium not-italic'>Address: </span>
+								Almaty, Kazakstan
+							</p>
+							<p>
+								<span className='text-black font-medium not-italic'>Email: </span>
+								abzh423@protonmail.com
+							</p>
+							<ul className='flex flex-row contacts contacts'>
+								<li className='text-black font-medium'>Links:</li>
+								<li className='blog'>
+									<a
+										href='https://blog.talapov.com/'
+										target='_blank'
+										rel='noreferrer'
+										className='text-gray-500 hover:text-black'
+									>
+										blog,
+									</a>
+								</li>
+								<li className='github'>
+									<a
+										href='https://github.com/abzh423'
+										target='_blank'
+										rel='noreferrer'
+										className='text-gray-500 hover:text-black'
+									>
+										github
+									</a>
+								</li>
+							</ul>
+						</div>
 						<a href='mailto:abzh423@protonmail.com' target='_blank' rel='noreferrer'>
 							<button className='p-1 px-3 rounded-full hover:shadow-lg text-black ring-2 ring-black'>
 								Work with Me
